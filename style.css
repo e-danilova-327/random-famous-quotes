@@ -1,0 +1,27 @@
+body {
+    background-color: #f69ec4; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to left, #f69ec4 0%, #32557f 100%);
+    text-align: center;
+    margin: 220px;
+    font-size: 37px;
+    font-family: "Montserat";
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.button{
+    background: linear-gradient(to right, #f69ec4 0%, #32557f 100%);
+    color: #000000;
+    font-size: 27px;
+    font-family: "Montserat";
+    margin: 0;
+    padding: 5px 5px 5px 5px; 
+    position: absolute;
+    top: 45%;
+    left: 40%;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

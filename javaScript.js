@@ -1,31 +1,31 @@
 let quotes = [
     {
-        "author": "Eleanor Roosevelt",
-        "quote": "The future belongs to those who believe in the beauty of their dreams.",
+        "author": "-Eleanor Roosevelt-",
+        "quote": "\"The future belongs to those who believe in the beauty of their dreams.\"",
     },
     {
-        "author": "Benjamin Franklin",
-        "quote":"Tell me and I forget. Teach me and I remember. Involve me and I learn.",
+        "author": "-Benjamin Franklin-",
+        "quote":"\"Tell me and I forget. Teach me and I remember. Involve me and I learn.\"",
     },
     {
-        "author": "Aristotle",
-        "quote": "It is during our darkest moments that we must focus to see the light.",
+        "author": "-Aristotle-",
+        "quote": "\"It is during our darkest moments that we must focus to see the light.\"",
     },
     {
-        "author": "Helen Keller",
-        "quote": "Life is either a daring adventure or nothing at all.",
+        "author": "-Helen Keller-",
+        "quote": "\"Life is either a daring adventure or nothing at all.\"",
     },
     {
-        "author": "Confucius",
-        "quote": "Life is really simple, but we insist on making it complicated.",
+        "author": "-Confucius-",
+        "quote": "\"Life is really simple, but we insist on making it complicated.\"",
     },
     {
-        "author": "homas Jefferson",
-        "quote": "I find that the harder I work, the more luck I seem to have.",
+        "author": "-Thomas Jefferson-",
+        "quote": "\"I find that the harder I work, the more luck I seem to have.\"",
     },
     {
-        "author": "Theodore Roosevelt",
-        "quote": "Believe you can and you're halfway there.",
+        "author": "-Theodore Roosevelt-",
+        "quote": "\"Believe you can and you're halfway there.\"",
     }    
 ];
 
@@ -38,7 +38,7 @@ function anotherQuote () {
     randomNumber = Math.floor(Math.random() * quotes.length);
     author = quotes[randomNumber].author;
     randomQuote = quotes[randomNumber].quote;
-    document.getElementById('quoteDisplay').innerHTML = quotes[randomNumber];  
+    document.getElementById('quoteDisplay').innerHTML = author + " " + randomQuote;  
 }  
 
 
