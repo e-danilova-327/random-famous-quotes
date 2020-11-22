@@ -29,22 +29,19 @@ let quotes = [
     }    
 ];
 
-//Initial function, similar to what I used with changing background color
-function anotherQuote () {
-    let index = Math.floor(Math.random() * (quotes.length));
-    document.getElementById("quoteDisplay").innerHTML = quotes[index];
-}
-
-//Also tried this one, still doesn't work
-function anotherQuote () {
-	let randomNumber = Math.floor(Math.random() * (quotes.length));
-	let randomQuote = quotes[randomNumber];
-	return randomQuote;
-}
-
-//Another one, does't work either
-function anotherQuote () {
-    return quotes.splice(Math.floor(Math.random() * quotes.length), 1);
-}
+let randomNumber = Math.floor(Math.random() * quotes.length);
+let author = quotes[randomNumber].author;
+let randomQuote = quotes[randomNumber].quote;
 
 
+function anotherQuote () {  
+    randomNumber = Math.floor(Math.random() * quotes.length);
+    author = quotes[randomNumber].author;
+    randomQuote = quotes[randomNumber].quote;
+    document.getElementById('quoteDisplay').innerHTML = quotes[randomNumber];  
+}  
+
+
+
+console.log(quotes[randomNumber].author);
+console.log(quotes[randomNumber].quote);
